@@ -58,8 +58,11 @@ body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
     line-height: 2;
+    max-width: 100%;
 }
-
+section {
+    margin: 2% 0 2% 0;
+}
 h2{
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
@@ -67,12 +70,8 @@ h2{
 }
 a {
     text-decoration: none;
-    color: #20BF55;
+    color: #1f6661;
 }
-a:visited {
-    color: darkcyan;
-}
-
 /* Header Styles */
 header {
     width: 100%;
@@ -112,8 +111,7 @@ h1 {
     align-items: center;
 }
 nav{
-    width: 50%;
-    /* margin-left: 2%; */
+    width: 60%;
     display: flex;
     justify-content:center;
 
@@ -129,19 +127,19 @@ nav a:hover {
     background: -webkit-linear-gradient(110deg,#2eefd8,#1ec3f1);
     border-color: darkcyan;
 }
-nav a:first-child {
+/* nav a:first-child {
     border-radius: 20px 0px 0px 20px;
 }
 nav a:last-child {
     border-radius: 0px 20px 20px 0px; 
-}
+} */
 /* Main Body Styling */
 
 .main {
     display: flex;
-    margin-top: 2%;
     height: 500px;
-    width: 100%
+    width: 100%;
+    justify-content: center;
 }
 .main-img {
     height: 100%;
@@ -151,18 +149,85 @@ nav a:last-child {
     height: 100%;
     width: 100%;
     border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .main-container {
     height: 100%;
-    width: 49%
+    width: 49%;
+    display: flex;
+    justify-content: center;
 }
 .main-text {
-    margin-top: 40%;
+    height: 80%;
     width: 80%;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
+    gap: 3px;
 }
+.main-text a {
+    border: 1px solid darkcyan;
+    height: 10%;
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    background: #5797f1;
+}
+.main-text a:hover {
+    background: #5bc6ad;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/* Projects Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+}
+.pic-txt {
+    background: -webkit-linear-gradient(135deg, #5797f1, #5bc6ad);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pic {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img {
+    height: 100%;
+    width: 100%;
+}
+
+/* footer section*/
+.footer-sec {
+    margin: 0;
+}
+footer {
+    background: -webkit-linear-gradient(135deg, #5797f1, #5bc6ad);
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me {
+    text-align: center;
+    color: #FFF;
+}
+.contact-btn {
+    margin-top: 5%;
+}
+.contact-btn a{
+    height: 10%;
+    width: 20%;
+    border: 3px solid green;
+}
+
 
 
 
