@@ -59,9 +59,11 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 2;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 section {
-    margin: 2% 0 2% 0;
+    margin-top: 2%;
 }
 h2{
     font-family: 'Varela Round', sans-serif;
@@ -91,11 +93,7 @@ h1 {
     font-family: 'Varela Round', sans-serif;
     margin-left: 2%;
     line-height: normal;
-    text-shadow: 3px 3px 4px rgb(0 0 0 / 0.2) ;
     color: #ffffff;
-    /* background: -webkit-linear-gradient(110deg, #48e3b7, #4c8ceb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 /* navbar styles */
 .nav-area {
@@ -120,34 +118,37 @@ nav a {
     height: 60%;
     width: 20%;
     text-align: center;
-    border: 2px solid;
+    border: 2px darkcyan solid;
+    color: #FFF;
 }
 nav a:hover {
     color: #fff;
     background: -webkit-linear-gradient(110deg,#2eefd8,#1ec3f1);
     border-color: darkcyan;
 }
-/* nav a:first-child {
-    border-radius: 20px 0px 0px 20px;
-}
-nav a:last-child {
-    border-radius: 0px 20px 20px 0px; 
-} */
+
 /* Main Body Styling */
 
 .main {
     display: flex;
-    height: 500px;
     width: 100%;
     justify-content: center;
+    height: 80vh;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
 }
 .main-img {
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: flex-end;
 }
 .main-img img {
     height: 100%;
-    width: 100%;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -167,9 +168,11 @@ nav a:last-child {
     gap: 3px;
 }
 .main-text a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     border: 1px solid darkcyan;
-    height: 10%;
-    width: 30%;
+    width: 27%;
     text-align: center;
     color: #fff;
     background: #5797f1;
@@ -179,38 +182,74 @@ nav a:last-child {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 /* Projects Section */
+.project-pics {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 100%;
+    justify-content: space-between;
+    width: 95%;
+}
+.content-box {
+    flex: 1 0 22%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .pic-txt {
     background: -webkit-linear-gradient(135deg, #5797f1, #5bc6ad);
-    margin-bottom: 20px;
+    height: 90%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    align-self: center;
 }
 .pic {
     height: 80%;
-    width: 80%;
+    /* width: 90%; */
+    margin-top: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    flex: 1 0 50%;
 }
 .pic img {
-    height: 100%;
-    width: 100%;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+
+}
+.txt {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(0,0,0,.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-grow: 1;
+}
+.txt p{
+    font-size: 2rem;
 }
 
 /* footer section*/
 .footer-sec {
-    margin: 0;
+    margin-top: 1%;
 }
 footer {
     background: -webkit-linear-gradient(135deg, #5797f1, #5bc6ad);
-    height: 175px;
+    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,16 +257,37 @@ footer {
 .contact-me {
     text-align: center;
     color: #FFF;
+    /* margin-top: 5%; */
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact-btn {
-    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-btn a{
-    height: 10%;
-    width: 20%;
-    border: 3px solid green;
-}
+    height: 80%;
+    width: 10%;
+    border: 3px solid darkcyan;
+    color: #FFF;
+    background: #5bc6ad;
 
+}
+.contact-btn a:hover {
+    background: #5797f1;
+}
+.socials-container {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
